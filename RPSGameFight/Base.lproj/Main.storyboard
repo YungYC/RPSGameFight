@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPSGameFight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b8e-Du-xYA"/>
+                        <viewControllerLayoutGuide type="bottom" id="zee-as-ynr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9KN-u7-0VI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89c-7v-EH6" userLabel="Other Paper Button">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                <state key="normal" title="Button" image="paper_downside"/>
+                                <connections>
+                                    <action selector="otherPaperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t0n-hT-6mh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjs-4d-Bnw" userLabel="My Scissor Button">
+                                <rect key="frame" x="0.0" y="542" width="125" height="125"/>
+                                <state key="normal" title="Button" image="scissor"/>
+                                <connections>
+                                    <action selector="myScissorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sf9-ze-9Ma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud0-lY-mQX" userLabel="My Rock Button">
+                                <rect key="frame" x="125" y="542" width="125" height="125"/>
+                                <state key="normal" title="Button" image="rock"/>
+                                <connections>
+                                    <action selector="myRockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhb-tp-nvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeC-nS-Ise" userLabel="My Paper Button">
+                                <rect key="frame" x="250" y="542" width="125" height="125"/>
+                                <state key="normal" title="Button" image="paper"/>
+                                <connections>
+                                    <action selector="myPaperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOO-SB-SAc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-o8-9gE" userLabel="Other Rock Button">
+                                <rect key="frame" x="125" y="0.0" width="125" height="125"/>
+                                <state key="normal" title="Button" image="rock_downside"/>
+                                <connections>
+                                    <action selector="otherRockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIR-Y6-Eqc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubg-mk-9OE" userLabel="Other Scissor Button">
+                                <rect key="frame" x="250" y="0.0" width="125" height="125"/>
+                                <state key="normal" title="Button" image="scissor_downside"/>
+                                <connections>
+                                    <action selector="otherScissorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dr-9u-lRC"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="You-Win" translatesAutoresizingMaskIntoConstraints="NO" id="jDl-Rc-vaw">
+                                <rect key="frame" x="80" y="298" width="240" height="276"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="You-Win_downside" translatesAutoresizingMaskIntoConstraints="NO" id="s7F-IA-BeY">
+                                <rect key="frame" x="80" y="79" width="240" height="276"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="You-lose" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-8Z-S9W">
+                                <rect key="frame" x="80" y="363" width="240" height="128"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="You-lose_downside" translatesAutoresizingMaskIntoConstraints="NO" id="i3x-X1-mae">
+                                <rect key="frame" x="80" y="162" width="240" height="128"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Draw_down" translatesAutoresizingMaskIntoConstraints="NO" id="758-vR-2zo">
+                                <rect key="frame" x="80" y="162" width="240" height="128"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Draw" translatesAutoresizingMaskIntoConstraints="NO" id="DXX-Hr-Cdc">
+                                <rect key="frame" x="80" y="363" width="240" height="128"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wait" translatesAutoresizingMaskIntoConstraints="NO" id="4LQ-Dz-bBC">
+                                <rect key="frame" x="80" y="379" width="240" height="95"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wait_down" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-EF-ois">
+                                <rect key="frame" x="80" y="169" width="240" height="95"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="drawImage" destination="DXX-Hr-Cdc" id="5Dx-KE-lb8"/>
+                        <outlet property="drawImageDown" destination="758-vR-2zo" id="fXM-ou-hFq"/>
+                        <outlet property="loseImage" destination="dXh-8Z-S9W" id="KrN-Xu-qcM"/>
+                        <outlet property="loseImageDown" destination="i3x-X1-mae" id="n3d-Fs-3Fq"/>
+                        <outlet property="waitImage" destination="4LQ-Dz-bBC" id="CP5-cG-zz9"/>
+                        <outlet property="waitImageDown" destination="Sz5-EF-ois" id="5ac-Fb-PLG"/>
+                        <outlet property="winImage" destination="jDl-Rc-vaw" id="5AK-Zn-AP4"/>
+                        <outlet property="winImageDown" destination="s7F-IA-BeY" id="v8B-be-zC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="303.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Draw" width="1018" height="601"/>
+        <image name="Draw_down" width="1018" height="601"/>
+        <image name="You-Win" width="512" height="512"/>
+        <image name="You-Win_downside" width="512" height="512"/>
+        <image name="You-lose" width="1172" height="885"/>
+        <image name="You-lose_downside" width="1185" height="885"/>
+        <image name="paper" width="166" height="179"/>
+        <image name="paper_downside" width="166" height="179"/>
+        <image name="rock" width="166" height="166"/>
+        <image name="rock_downside" width="166" height="166"/>
+        <image name="scissor" width="166" height="180"/>
+        <image name="scissor_downside" width="166" height="180"/>
+        <image name="wait" width="268" height="94"/>
+        <image name="wait_down" width="268" height="94"/>
+    </resources>
+</document>
